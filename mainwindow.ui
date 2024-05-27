@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+       background-color: #87CEEB;
+}
+</string>
+      </property>
+      <property name="title">
+       <string>SignIn System</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label_username">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>80</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+color: red;
+}</string>
+       </property>
+       <property name="text">
+        <string>username:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_password">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+color: red;
+}</string>
+       </property>
+       <property name="text">
+        <string>password:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_UserName">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+border:none;
+background-color:transparent;
+border-bottom:3px solid red;
+}
+QLineEdit:Focus
+{
+border:3px solid red;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>username</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Password">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>80</y>
+         <width>113</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+border:none;
+background-color:transparent;
+border-bottom:3px solid red;
+}
+QLineEdit:Focus
+{
+border:3px solid red;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>password</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Login">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+
+color:white;
+background:none;
+background-color:transparent;
+border:3px solid red;
+}
+QPushButton:Hover{
+color:red;
+border:3px solid white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Cancel">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>140</y>
+         <width>89</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+
+color:white;
+background:none;
+background-color:transparent;
+border:3px solid red;
+}
+QPushButton:Hover{
+color:red;
+border:3px solid white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
